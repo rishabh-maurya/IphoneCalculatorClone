@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  --background-colour: rgb(20, 20, 20);
+  --operator-button-colour: orange;
+  --number-button-colour: rgb(63, 63, 63);
+  --other-button-colour: rgb(138, 138, 138);
+  --button-clour: #fff;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media Screen and (min-width: 701px) {
+  .container {
+    height: 450px;
+    width: 320px;
+    padding: 10px;
+    background-color: var(--background-colour);
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}
+
+@media Screen and (min-width: 501px) and (max-width: 700px) {
+  .container {
+    height: 450px;
+    width: 320px;
+    padding: 10px;
+    background-color: var(--background-colour);
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}
+
+@media Screen and (min-width: 300px) and (max-width: 500px) {
+  .main {
+    padding-top: 20px;
+    box-sizing: border-box;
+    background-color: var(--background-colour);
+    align-items: flex-start;
+  }
+
+  .container {
+    height: 450px;
+    width: 320;
+    padding: 10px;
+    background-color: var(--background-colour);
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}
+
+.display__output {
+  width: inherit;
+  background-color: transparent;
+  color: #fff;
+  font-size: 3rem;
+  text-align: right;
+  padding: 2px 10px;
+  box-sizing: border-box;
+}
+
+.input__output__box {
+  height: 50px;
+  width: 100%;
+
+  outline: none;
+  border: none;
+}
+
+.button__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+}
+
+.button__row {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  column-gap: 10px;
+}
+
+.btn {
+  height: 65px;
+  width: 65px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  font-size: 2rem;
+  color: var(--button-clour);
+  cursor: pointer;
+}
+
+.operator__btn {
+  background-color: var(--operator-button-colour);
+}
+.number__btn {
+  background-color: var(--number-button-colour);
+}
+.other__btn {
+  background-color: var(--other-button-colour);
+  color: black;
+}
+
+.special__btn {
+  width: 140px;
+  text-align: left;
+  padding: 0 20px;
+}
