@@ -1,22 +1,4 @@
 const displayOutput = document.getElementById("displayOutput");
-// const clearAll = document.getElementById("allClear");
-// const removeOne = document.getElementById("removeOneDigit");
-// const modulo = document.getElementById("modulo");
-// const divide = document.getElementById("divide");
-// const multiplication = document.getElementById("multiplication");
-// const subtraction = document.getElementById("subtraction");
-// const addition = document.getElementById("addition");
-// const one = document.getElementById("one");
-// const two = document.getElementById("two");
-// const three = document.getElementById("three");
-// const four = document.getElementById("four");
-// const five = document.getElementById("five");
-// const six = document.getElementById("six");
-// const seven = document.getElementById("seven");
-// const eight = document.getElementById("eight");
-// const nine = document.getElementById("nine");
-// const zero = document.getElementById("zero");
-// const point = document.getElementById("point");
 const button = document.getElementsByClassName("btn");
 for (let item of button) {
   item.addEventListener("click", (event) => {
